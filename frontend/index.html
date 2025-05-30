@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IoMT Blockchain Registration</title>
+  <!--  Use UMD version of ethers.js -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <h2>Fog Node Merkle Root Submission</h2>
+
+  <label>Merkle Root:</label>
+  <input type="text" id="merkleRoot" size="70"><br><br>
+
+  <label>ZKP Commitment:</label>
+  <input type="text" id="commitment" size="70"><br><br>
+
+  <button onclick="register()">Register Fog Node</button>
+
+  <p id="status"></p>
+
+  <!-- Your frontend logic -->
+  <script src="script.js"></script>
+</body>
+</html>
